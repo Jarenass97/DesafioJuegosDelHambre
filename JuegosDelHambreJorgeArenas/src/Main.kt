@@ -18,7 +18,7 @@ fun main() {
             cap.enviarItems(4)
             println(map)
         }
-        //Thread.sleep(1000)
+        Thread.sleep(1000)
         tiempo++
     }
     var ganador = map.ganador()
