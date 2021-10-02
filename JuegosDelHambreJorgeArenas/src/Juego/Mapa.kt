@@ -3,7 +3,7 @@ package Juego
 import items.Item
 import items.TipoItem
 
-class Mapa(private var mapa: ArrayList<Array<Any?>>) {
+class Mapa(private var mapa: Array<Array<Any?>>) {
 
     var capitolio: Capitolio? = null
     private var jugadores = ArrayList<Jugador?>(0)

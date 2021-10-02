@@ -4,11 +4,9 @@ import items.Item
 import items.TipoItem
 
 object Factorias {
+
     fun generarMapa(filas: Int, columnas: Int): Mapa {
-        var mapa: ArrayList<Array<Any?>> = ArrayList<Array<Any?>>()
-        for (i in 1..filas) {
-            mapa.add(Array<Any?>(columnas) { null })
-        }
+        var mapa = Array<Array<Any?>>(filas) { Array<Any?>(columnas) { null } }
         return Mapa(mapa)
     }
 
